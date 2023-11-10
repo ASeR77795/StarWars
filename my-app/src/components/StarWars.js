@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 const StarWars = () => {
 	const [planetId, setPlanetId] = useState(1);
 	const [planetInfo, setPlanetInfo] = useState({});
-	const [isLoading, setIsLoading] = useState(false);
+	const [isLoading, setIsLoading] = useState(true);
 	useEffect(() => {
 		setIsLoading(true);
 		fetch(`https://swapi.dev/api/planets/${planetId}`)
